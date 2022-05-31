@@ -1,14 +1,13 @@
 
-const Header = ({magac}) => {
+const Header = ({show,setShow}) => {
+  
   return (
-    <div>
-        <h2>the name is {magac}</h2>
+    <div className="header">
+      <h1>SomTask</h1>
+      <button onClick={()=>setShow(!show)}>Add Task</button>
     </div>
   )
 }
 
-Header.defaultProps = {
-    magac: "cali"
-}
 
 export default Header
